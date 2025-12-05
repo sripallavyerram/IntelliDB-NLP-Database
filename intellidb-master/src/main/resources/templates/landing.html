@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>IntelliDB - Speak to Your Database</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" th:href="@{/}"><i class="bi bi-database-fill"></i> IntelliDB</a>
+        <div class="d-flex align-items-center gap-2">
+            <a th:href="@{/login}" class="btn btn-outline-secondary">Login</a>
+            <a th:href="@{/register}" class="btn btn-primary">Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section">
+    <div class="container">
+        <i class="bi bi-database" style="font-size: 3rem; color: var(--primary-color);"></i>
+        <h1 class="mt-3">Speak to Your <span class="highlight">Database</span></h1>
+        <p>Transform complex SQL queries into simple conversations. IntelliDB makes database management accessible to everyone through natural language processing.</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <a th:href="@{/register}" class="btn btn-primary btn-lg">Get Started Free <i class="bi bi-arrow-right-short"></i></a>
+        </div>
+    </div>
+</header>
+
+<section class="features-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="page-title">Powerful Features for Modern Teams</h2>
+            <p class="page-subtitle">Everything you need to manage databases and query data intuitively.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="icon"><i class="bi bi-chat-left-text-fill"></i></div>
+                    <h5>Natural Language Queries</h5>
+                    <p>Ask questions in plain English and get instant SQL results. No more complex syntax or schema memorization required.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="icon" style="color: #A78BFA;"><i class="bi bi-shield-lock-fill"></i></div>
+                    <h5>Secure Connections</h5>
+                    <p>Enterprise-grade AES-256 encryption for your database credentials ensures your data remains secure.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-card">
+                    <div class="icon" style="color: #22D3EE;"><i class="bi bi-lightning-charge-fill"></i></div>
+                    <h5>Multi-Database Support</h5>
+                    <p>Connect to MySQL databases with more support coming soon. Manage multiple databases from a single interface.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2 class="page-title">Ready to Dive In?</h2>
+        <p class="page-subtitle mt-3">Start querying your database in seconds. No credit card required.</p>
+        <a th:href="@{/register}" class="btn btn-primary btn-lg mt-3">Create Your Account</a>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container text-center">
+        <h4 class="mb-3">Contact</h4>
+        <p class="text-secondary">Hemanth Yerra</p>
+        <p class="text-secondary mb-3">
+            <a th:href="'mailto:' + 'hemanthyerra.dev@gmail.com'" class="text-secondary text-decoration-none">hemanthyerra.dev@gmail.com</a> | +91 8297064006
+        </p>
+        <div class="social-links mb-4">
+            <a href="https://www.linkedin.com/in/hemanth299/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/hemanth299" target="_blank"><i class="bi bi-github"></i></a>
+        </div>
+        <p class="text-secondary small">&copy; 2025 IntelliDB. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
